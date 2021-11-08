@@ -9,7 +9,7 @@
 					<view class="u-iconfont" :class="showMoney ? 'uicon-eye' : 'uicon-eye-off'" style="color: #fff;font-size: 50rpx;"></view>
 				</view>
 				<view class="money-num u-p-t-50">{{ showMoney ? userInfo.money || '0.00' : '***' }}</view>
-				<button class="u-reset-button withdraw-btn" @tap="$Router.push('/pages/user/wallet/withdraw')">提现</button>
+<!--				<button class="u-reset-button withdraw-btn" @tap="$Router.push('/pages/user/wallet/withdraw')">提现</button>-->
 			</view>
 		</view>
 		<!-- 筛选 -->

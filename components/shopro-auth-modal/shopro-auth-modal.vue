@@ -329,27 +329,23 @@
 			</view>
 
 			<!-- 第三方登录 -->
-			<view v-if="authType === 'accountLogin' || authType === 'smsLogin'" class="auto-login-box u-flex u-row-center u-col-center">
-				<!-- 微信 -->
-				<image
-					v-if="['App', 'wxOfficialAccount', 'wxMiniProgram'].includes(platform)"
-					class="auto-login-img"
-					@tap="thirdLogin('wechat')"
-					:src="$IMG_URL + '/imgs/auto_login_wx.png'"
-				></image>
-				<!-- 支付宝 -->
-				<!-- <image
-					v-if="['App', 'alipayMiniProgram', 'H5'].includes(platform)"
-					class="auto-login-img"
-					@tap="thirdLogin('alipay')"
-					:src="$IMG_URL + '/imgs/auto_login_ali.png'"
-					mode=""
-				></image> -->
-				<!-- 苹果 -->
-				<!-- #ifdef APP-PLUS -->
-				<image v-if="device === 'ios'" class="auto-login-img" @tap="thirdLogin('apple')" :src="$IMG_URL + '/imgs/auto_login_iphone.png'"></image>
-				<!-- #endif -->
-			</view>
+<!--			<view v-if="authType === 'accountLogin' || authType === 'smsLogin'" class="auto-login-box u-flex u-row-center u-col-center">-->
+<!--				&lt;!&ndash; 微信 &ndash;&gt;-->
+<!--				<image-->
+<!--					v-if="['App', 'wxOfficialAccount', 'wxMiniProgram'].includes(platform)"-->
+<!--					class="auto-login-img"-->
+<!--					@tap="thirdLogin('wechat')"-->
+<!--					:src="$IMG_URL + '/imgs/auto_login_wx.png'"-->
+<!--				></image>-->
+<!--				&lt;!&ndash; 支付宝 &ndash;&gt;-->
+<!--				&lt;!&ndash; <image-->
+<!--					v-if="['App', 'alipayMiniProgram', 'H5'].includes(platform)"-->
+<!--					class="auto-login-img"-->
+<!--					@tap="thirdLogin('alipay')"-->
+<!--					:src="$IMG_URL + '/imgs/auto_login_ali.png'"-->
+<!--					mode=""-->
+<!--				></image> &ndash;&gt;-->
+<!--			</view>-->
 
 			<!-- 协议 -->
 			<view v-if="['accountLogin', 'smsLogin', 'register'].includes(authType)" class="agreement-box u-flex u-row-center">

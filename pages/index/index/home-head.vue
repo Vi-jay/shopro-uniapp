@@ -57,7 +57,7 @@ export default {
 		},
 		navTitle: {
 			type: String,
-			default: 'Shopro商城'
+			default: '功夫商城'
 		},
 		navTitleStyle: {
 			type: Object,

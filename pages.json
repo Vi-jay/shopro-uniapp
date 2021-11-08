@@ -764,20 +764,7 @@
 						"group": "用户"
 					}
 				},
-				{
-					"path": "wallet/withdraw",
-					"style": {
-						"navigationBarTitleText": "",
-						"navigationStyle": "custom"
 
-					},
-					"meta": {
-						"auth": true,
-						"async": true,
-						"title": "提现",
-						"group": "用户"
-					}
-				},
 				{
 					"path": "wallet/withdraw-log",
 					"style": {

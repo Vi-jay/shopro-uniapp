@@ -1,8 +1,8 @@
 {
-    "name" : "Shopro商城",
-    "appid" : "__UNI_*****06",
-    "description" : "Shopro商城",
-    "versionName" : "1.3.7",
+    "name" : "功夫商城",
+    "appid" : "__UNI__1ECAA98",
+    "description" : "功夫商城",
+    "versionName" : "1.4.2",
     "versionCode" : 137,
     "transformPx" : false,
     "app-plus" : {
@@ -28,11 +28,6 @@
         "nvueCompiler" : "uni-app",
         "compilerVersion" : 3,
         "modules" : {
-            "Geolocation" : {},
-            "Maps" : {},
-            "OAuth" : {},
-            "Payment" : {},
-            "Share" : {},
             "VideoPlayer" : {}
         },
         "distribute" : {
@@ -40,118 +35,67 @@
                 "permissions" : [
                     "<uses-feature android:name=\"android.hardware.camera\"/>",
                     "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
-                    "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
-                    "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
-                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
-                    "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
                     "<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
                     "<uses-permission android:name=\"android.permission.CAMERA\"/>",
                     "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
-                    "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
                     "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
                     "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
-                    "<uses-permission android:name=\"android.permission.INTERNET\"/>",
                     "<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
-                    "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
                     "<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>",
                     "<uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\"/>",
-                    "<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
-                    "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
                     "<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
                     "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
                     "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
-                    "<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>",
-                    "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>",
-                    "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
+                    "<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>"
                 ],
-                "abiFilters" : [ "armeabi-v7a", "arm64-v8a" ]
+                "abiFilters" : [ "armeabi-v7a" ],
+                "autoSdkPermissions" : false
             },
             "ios" : {
-                "capabilities" : {
-                    "entitlements" : {
-                        "com.apple.developer.associated-domains" : [ "applinks:m.*****.top" ]
-                    }
-                },
                 "privacyDescription" : {
-                    "NSLocationAlwaysAndWhenInUseUsageDescription" : "需要同意获取您的位置信息才能展示附近信息",
-                    "NSLocationAlwaysUsageDescription" : "需要同意获取您的位置信息才能展示附近信息",
-                    "NSLocationWhenInUseUsageDescription" : "需要同意获取您的位置信息才能展示附近信息",
-                    "NSPhotoLibraryAddUsageDescription" : "需要同意访问您的相册才能保存图片",
-                    "NSPhotoLibraryUsageDescription" : "需要同意访问您的相册才能选取图片",
-                    "NSCameraUsageDescription" : "需要同意访问您的摄像头才能拍摄照片",
-                    "NSUserTrackingUsageDescription" : "请放心,开启权限不会获取您在其他站点的隐私信息,该权限仅用于标识设备并保障服务安全与提升浏览体验"
-                }
+                    "NSPhotoLibraryUsageDescription" : "商品评价",
+                    "NSPhotoLibraryAddUsageDescription" : "商品评价",
+                    "NSCameraUsageDescription" : "核销虚拟商品",
+                    "NSMicrophoneUsageDescription" : ""
+                },
+                "idfa" : false
             },
             "sdkConfigs" : {
                 "ad" : {},
-                "payment" : {
-                    "alipay" : {
-                        "__platform__" : [ "ios", "android" ]
-                    },
-                    "weixin" : {
-                        "__platform__" : [ "ios", "android" ],
-                        "appid" : "wx522b*****ae",
-                        "UniversalLinks" : "https://m.*****.top/uni-universallinks/__U*****"
-                    }
-                },
-                "geolocation" : {
-                    "amap" : {
-                        "__platform__" : [ "android" ],
-                        "appkey_ios" : "949f86b55f*****de010206494",
-                        "appkey_android" : "0d51d7*****ebf2bcbe264dac409"
-                    }
-                },
-                "maps" : {
-                    "amap" : {
-                        "appkey_ios" : "949f86b55f*****de010206494",
-                        "appkey_android" : "0d51d7a*****f2bcbe264dac409"
-                    }
-                },
-                "oauth" : {
-                    "weixin" : {
-                        "appid" : "wx522b*****319ae",
-                        "appsecret" : "531b39d953f9*****e83c7238fb4dc",
-                        "UniversalLinks" : "https://m.*****.top/uni-universallinks/*****"
-                    },
-                    "apple" : {}
-                },
-                "share" : {
-                    "weixin" : {
-                        "appid" : "wx522*****319ae",
-                        "UniversalLinks" : "https://m.*****.top/uni-universallinks/__*****"
-                    }
-                },
+                "payment" : {},
+                "oauth" : {},
+                "share" : {},
                 "push" : {}
             },
             "icons" : {
                 "android" : {
-                    "hdpi" : "",
-                    "xhdpi" : "",
-                    "xxhdpi" : "",
-                    "xxxhdpi" : ""
+                    "hdpi" : "unpackage/res/icons/72x72.png",
+                    "xhdpi" : "unpackage/res/icons/96x96.png",
+                    "xxhdpi" : "unpackage/res/icons/144x144.png",
+                    "xxxhdpi" : "unpackage/res/icons/192x192.png"
                 },
                 "ios" : {
-                    "appstore" : "",
+                    "appstore" : "unpackage/res/icons/1024x1024.png",
                     "ipad" : {
-                        "app" : "",
-                        "app@2x" : "",
-                        "notification" : "",
-                        "notification@2x" : "",
-                        "proapp@2x" : "",
-                        "settings" : "",
-                        "settings@2x" : "",
-                        "spotlight" : "",
-                        "spotlight@2x" : ""
+                        "app" : "unpackage/res/icons/76x76.png",
+                        "app@2x" : "unpackage/res/icons/152x152.png",
+                        "notification" : "unpackage/res/icons/20x20.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "proapp@2x" : "unpackage/res/icons/167x167.png",
+                        "settings" : "unpackage/res/icons/29x29.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "spotlight" : "unpackage/res/icons/40x40.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png"
                     },
                     "iphone" : {
-                        "app@2x" : "",
-                        "app@3x" : "",
-                        "notification@2x" : "",
-                        "notification@3x" : "",
-                        "settings@2x" : "",
-                        "settings@3x" : "",
-                        "spotlight@2x" : "",
-                        "spotlight@3x" : ""
+                        "app@2x" : "unpackage/res/icons/120x120.png",
+                        "app@3x" : "unpackage/res/icons/180x180.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "notification@3x" : "unpackage/res/icons/60x60.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "settings@3x" : "unpackage/res/icons/87x87.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png",
+                        "spotlight@3x" : "unpackage/res/icons/120x120.png"
                     }
                 }
             }
@@ -219,13 +163,8 @@
             "port" : ""
         },
         "sdkConfigs" : {
-            "maps" : {
-                "qqmap" : {
-                    "key" : "4NRBZ-CM*****-ARYXH-DCFH3"
-                }
-            }
+            "maps" : {}
         },
         "domain" : "*****.com"
-    },
-    "_spaceID" : "f0536a*****8350-2aa7c3e11334"
+    }
 }

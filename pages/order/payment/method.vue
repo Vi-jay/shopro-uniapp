@@ -1,48 +1,7 @@
 <!-- 收银台 -->
 <template>
 	<view class="pay-method-wrap">
-		<view class="u-flex-col u-col-center money-box" v-if="orderDetail.total_fee">
-			<text class="time" v-show="isCountDown">{{ timeText }}</text>
-			<view class="money">{{ orderDetail.total_fee }}</view>
-		</view>
-
-		<!-- 支付方式单选项 -->
-		<u-radio-group v-if="initPayment.length" class="pay-box" v-model="payType" active-color="#f0c785">
-			<!-- 微信支付 -->
-			<view class="u-flex u-row-between pay-item" v-show="initPayment.includes('wechat')" @tap="payType = 'wechat'">
-				<view class="u-flex">
-					<image class="pay-img" :src="$IMG_URL + '/imgs/order/order_wx_pay.png'" mode=""></image>
-					<text>微信支付</text>
-				</view>
-				<u-radio shape="circle" name="wechat"></u-radio>
-			</view>
-			<!-- 支付宝支付 -->
-			<view class="u-flex u-row-between pay-item" v-show="initPayment.includes('alipay')" @tap="payType = 'alipay'">
-				<view class="u-flex">
-					<image class="pay-img" :src="$IMG_URL + '/imgs/order/order_ali_pay.png'" mode=""></image>
-					<text>支付宝支付</text>
-				</view>
-				<u-radio shape="circle" name="alipay"></u-radio>
-			</view>
-			<!-- 苹果支付 -->
-			<view class="u-flex u-row-between pay-item" v-show="initPayment.includes('iospay') && appPlatfrom === 'ios'" @tap="payType = 'iospay'">
-				<view class="u-flex">
-					<image class="pay-img" :src="$IMG_URL + '/imgs/order/order_apple_pay.png'" mode=""></image>
-					<text>ApplePay</text>
-				</view>
-				<u-radio shape="circle" name="iospay"></u-radio>
-			</view>
-			<!-- 余额支付 -->
-			<view class="u-flex u-row-between pay-item" v-show="initPayment.includes('wallet')" @tap="payType = 'wallet'">
-				<view class="u-flex">
-					<image class="pay-img" :src="$IMG_URL + '/imgs/order/order_wallet_pay.png'" mode=""></image>
-					<text>余额支付</text>
-				</view>
-				<u-radio shape="circle" name="wallet"></u-radio>
-			</view>
-		</u-radio-group>
-
-		<button class="u-reset-button pay-btn" @tap="confirmPay">确认支付 ￥{{ orderDetail.total_fee || '0.00' }}</button>
+		暂不支持线上支付
 	</view>
 </template>
 

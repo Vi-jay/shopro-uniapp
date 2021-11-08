@@ -19,18 +19,7 @@ export default {
 	// 获取当前运行平台
 	get() {
 		let platform = '';
-		// #ifdef H5
-		wxsdk.isWechat() ? (platform = 'wxOfficialAccount') : (platform = 'H5');
-		// #endif
-		// #ifdef APP-PLUS
-		platform = 'App';
-		// #endif
-		// #ifdef MP-WEIXIN
-		platform = 'wxMiniProgram';
-		// #endif
-		// #ifdef MP-ALIPAY
-		platform = 'alipayMiniProgram';
-		// #endif
+		platform = 'H5'
 		if (platform !== '') {
 			uni.setStorageSync('platform', platform);
 		} else {
