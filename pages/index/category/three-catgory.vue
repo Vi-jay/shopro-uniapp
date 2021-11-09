@@ -3,7 +3,7 @@
 		<view class="u-flex u-col-center wrapper-box">
 			<view class="scroll-box" style="background-color: #F6F6F6;">
 				<scroll-view class="left u-flex-col u-col-center" enable-flex enable-back-to-top scroll-y>
-					<view class="type-list u-ellipsis-1" :class="[{ 'list-active': listId == index }]" v-for="(item, index) in categoryData" :key="index" @tap="onType(index)">
+					<view v-if="item.children.length&&item.name!=='ss'" class="type-list u-ellipsis-1" :class="[{ 'list-active': listId == index }]" v-for="(item, index) in categoryData" :key="index" @tap="onType(index)">
 						<view class="line" :class="[{ 'line-active': listId == index }]"></view>
 						{{ item.name }}
 					</view>

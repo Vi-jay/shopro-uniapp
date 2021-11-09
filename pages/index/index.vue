@@ -9,7 +9,7 @@
 
 		<view v-else-if="isConnected && isRefresh" class="content-box">
 			<!-- 导航栏 -->
-			<home-head v-if="headSwiperList && headSwiperList.length" :isScorll="isScorll" borderRadius="0" :navTitle="initShop.name" :list="headSwiperList"></home-head>
+			<home-head v-if="headSwiperList && headSwiperList.length" :isScorll="isScorll" borderRadius="0" :navTitle="''" :list="headSwiperList"></home-head>
 			<!-- 自定义模块 -->
 			<view class="template-box">
 				<block v-for="(item, index) in homeTemplate" :key="item.id">
@@ -27,7 +27,7 @@
 					<sh-search v-if="item.type === 'search'"></sh-search>
 
 					<!-- 滑动宫格 -->
-					<sh-grid-swiper v-if="item.type === 'menu'" :list="item.content.list" :oneRowNum="item.content.style"></sh-grid-swiper>
+<!--					<sh-grid-swiper v-if="item.type === 'menu'" :list="item.content.list" :oneRowNum="item.content.style"></sh-grid-swiper>-->
 
 					<!-- 推荐商品 -->
 					<sh-hot-goods v-if="item.type === 'goods-list' || item.type === 'goods-group'" :detail="item.content"></sh-hot-goods>
